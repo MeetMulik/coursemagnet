@@ -56,7 +56,7 @@ const ImageForm = ({ initialData, courseId }: ImageFormProps) => {
                 <Button onClick={toggleEdit} variant="ghost">
                     {isEditing && (<>Cancel</>)}
                     {!isEditing && !initialData.imageUrl && (<><PlusCircle className='h-4 w-4 mr-2' /> Add an Image</>)}
-                    {!isEditing && initialData.imageUrl && (<><Pencil className='h-4 w-4 mr-2' />Add an Image</>)}
+                    {!isEditing && initialData.imageUrl && (<><Pencil className='h-4 w-4 mr-2' />Edit Image</>)}
                 </Button>
             </div>
             {!isEditing && (
