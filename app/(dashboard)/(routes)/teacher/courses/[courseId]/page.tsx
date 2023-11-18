@@ -28,6 +28,7 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
             }
         }
     })
+
     console.log('course', course)
 
     const categories = await db.category.findMany({
