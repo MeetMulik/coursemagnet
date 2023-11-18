@@ -66,6 +66,10 @@ const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
         }
     }
 
+    const onEdit = (id: string) => {
+        router.push(`/teacher/courses/${courseId}/chapters/${id}`);
+    }
+
     const onReorder = async (updateData: { id: string; position: number }[]) => {
         try {
             setIsUpdating(true);
@@ -121,7 +125,7 @@ const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
                 !isCreating && (
                     <div className={cn('text-sm mt-2', !initialData.chapters.length && 'text-slate-500 italic')}>
                         {!initialData.chapters.length && "No chapters yet"}
-                        <ChaptersList onEdit={() => { }} onReorder={onReorder} items={initialData.chapters || []} />
+                        <ChaptersList onEdit={onEdit} onReorder={onReorder} items={initialData.chapters || []} />
 
                     </div>
                 )
