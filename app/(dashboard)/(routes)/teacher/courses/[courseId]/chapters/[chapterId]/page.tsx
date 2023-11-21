@@ -11,6 +11,7 @@ import ChapterAccessForm from './_components/chapter-access-form';
 import ChapterVideo from './_components/chapter-video-form';
 import ChapterVideoForm from './_components/chapter-video-form';
 import { Banner } from '@/components/banner';
+import ChapterActions from './_components/chapter-actions';
 
 const ChapterIdPage = async ({ params }: { params: { courseId: string; chapterId: string } }) => {
     const { userId } = auth();
@@ -57,7 +58,7 @@ const ChapterIdPage = async ({ params }: { params: { courseId: string; chapterId
                                 <h1 className='text-2xl font-medium'>Chapter Creation</h1>
                                 <span className='text-sm text-slate-700'>Complete all fields {completionText}</span>
                             </div>
-
+                            <ChapterActions isPublished={chapter.isPublished} disabled={!isComplete} courseId={params.courseId} chapterId={params.chapterId} />
                         </div>
                     </div>
                 </div>
