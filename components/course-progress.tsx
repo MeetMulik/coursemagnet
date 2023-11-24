@@ -22,6 +22,7 @@ export const CourseProgress = ({
     variant,
     size,
 }: CourseProgressProps) => {
+    console.log(value, "val");
     return (
         <div>
             <Progress
