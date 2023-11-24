@@ -93,7 +93,6 @@ export async function PATCH(
     try {
         const { userId } = auth();
         const { isPublished, ...values } = await req.json();
-        console.log("video values", values);
         if (!userId) {
             return new NextResponse("Unauthorized", { status: 401 });
         }
