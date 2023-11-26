@@ -25,7 +25,7 @@ CourseMagnet is a powerful e-learning platform built with Next.js 13. Browse and
 
 ## Demo
 
-![CourseMagnet Demo](https://coursemagnet.vercel.app/)
+Deployment: [Link](https://coursemagnet.vercel.app/)
 
 ## Installation
 
