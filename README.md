@@ -1,34 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="https://github.com/MeetMulik/coursemagnet/assets/89148021/865cfe2c-b625-4a98-9769-4074e3332a99" alt="" />
+</div>
 
-## Getting Started
+# 🚀 CourseMagnet
 
-First, run the development server:
+CourseMagnet is a powerful e-learning platform built with Next.js 13. Browse and filter a diverse range of courses, seamlessly purchase them using Stripe, and track your progress with an intuitive dashboard. Whether you're a student or a teacher, CourseMagnet provides a dynamic experience.
+
+## Features
+
+- 📚 Explore & Filter Courses
+- 💳 Secure Course Purchases via Stripe
+- ✅ Track Chapter Completion Status
+- 📊 Progress Calculations for Each Course
+- 🎓 Personalized Student Dashboard
+- 👩‍🏫 Empowering Teacher Mode
+- 🆕 Effortlessly Create Courses & Chapters
+- 🔄 Intuitive Chapter Position Reordering with Drag 'n' Drop
+- 📎 Multimedia Management: Thumbnails, Attachments, and Videos using UploadThing
+- 🎥 Video Processing and HLS Playback with Mux
+- 📝 Rich Text Editing for Chapter Descriptions
+- 🔐 Secure Authentication with Clerk
+- 🔄 Robust ORM Integration with Prisma
+- 🗃️ Scalable MySQL Database Using Planetscale
+
+## Demo
+
+![CourseMagnet Demo](https://coursemagnet.vercel.app/)
+
+## Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/MeetMulik/coursemagnet.git
+
+cd coursemagnet
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies for both the frontend and backend:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm install
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+3. Set the environment variables for backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+DATABASE_URL=
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+MUX_TOKEN_ID=
+MUX_TOKEN_SECRET=
+STRIPE_API_KEY=
+NEXT_PUBLIC_APP_URL=
+STRIPE_WEBHOOK_SECRET=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+```bash
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+cd coursemagnet
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open your browser and navigate to http://localhost:3000 to view the application.
+
+```
+
+## Deployment 🚀
+
+This project is deployed using [Vercel](https://vercel.com/).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+1. Click the "Deploy with Vercel" button above.
+2. Follow the instructions to deploy your project.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+- If you have suggestions for adding or removing something, feel free to open an issue to discuss it, or directly create a pull request with the necessary changes.
+- Create individual PR for each suggestion.
+
+### Creating A Pull Request
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Screenshots 📷
